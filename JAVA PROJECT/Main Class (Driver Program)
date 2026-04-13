@@ -1,0 +1,39 @@
+// Main.java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Create movie
+        Movie movie = new Movie("Avengers: Endgame", "7:00 PM");
+
+        // Create booking system with 4 rows and 4 columns
+        Booking booking = new Booking(movie, 4, 4);
+
+        // Display movie info
+        movie.displayMovieInfo();
+
+        // Display initial seat layout
+        booking.displaySeats();
+
+        // User seat booking
+        System.out.println("\nEnter number of seats to book:");
+        int n = sc.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            System.out.println("Enter seat row (1-4): ");
+            int row = sc.nextInt() - 1;
+            System.out.println("Enter seat column (1-4): ");
+            int col = sc.nextInt() - 1;
+
+            booking.bookSeat(row, col);
+            booking.displaySeats();
+        }
+
+        // Display final confirmation
+        booking.displayConfirmation();
+
+        sc.close();
+    }
+}

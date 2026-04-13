@@ -1,0 +1,35 @@
+Movie: Avengers: Endgame | Show Time: 7:00 PM
+Seat Layout:
+O O O O
+O O O O
+O O O O
+O O O O
+
+Enter number of seats to book:
+2
+Enter seat row (1-4):
+1
+Enter seat column (1-4):
+2
+Seat booked successfully!
+Seat Layout:
+O X O O
+O O O O
+O O O O
+O O O O
+
+Enter seat row (1-4):
+2
+Enter seat column (1-4):
+4
+Seat booked successfully!
+Seat Layout:
+O X O O
+O O O X
+O O O O
+O O O O
+
+Booking Confirmed!
+Movie: Avengers: Endgame | Show Time: 7:00 PM
+Selected Seats: [(1,2), (2,4)]
+Total Cost: ₹500
